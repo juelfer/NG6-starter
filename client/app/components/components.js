@@ -1,12 +1,14 @@
 import angular from 'angular';
 import Home from './home/home';
 import About from './about/about';
-import Input from './Input/Input.js';
+import inputQuestion from './inputQuestion/inputQuestion';
+import outputQuestion from './outputQuestion/outputQuestion';
 
 let componentModule = angular.module('app.components', [
   Home,
   About,
-  Input
+  inputQuestion,
+  outputQuestion
 ])
 
 .name;

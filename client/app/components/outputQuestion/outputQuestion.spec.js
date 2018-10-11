@@ -1,16 +1,16 @@
-import OutputModule from './Output';
-import OutputController from './Output.controller';
-import OutputComponent from './Output.component';
-import OutputTemplate from './Output.html';
+import OutputQuestionModule from './outputQuestion';
+import OutputQuestionController from './outputQuestion.controller';
+import OutputQuestionComponent from './outputQuestion.component';
+import OutputQuestionTemplate from './outputQuestion.html';
 
-describe('Output', () => {
+describe('OutputQuestion', () => {
   let $rootScope, makeController;
 
-  beforeEach(window.module(OutputModule));
+  beforeEach(window.module(OutputQuestionModule));
   beforeEach(inject((_$rootScope_) => {
     $rootScope = _$rootScope_;
     makeController = () => {
-      return new OutputController();
+      return new OutputQuestionController();
     };
   }));
 
@@ -30,20 +30,20 @@ describe('Output', () => {
     // template specs
     // tip: use regex to ensure correct bindings are used e.g., {{  }}
     it('has name in template [REMOVE]', () => {
-      expect(OutputTemplate).to.match(/{{\s?\$ctrl\.name\s?}}/g);
+      expect(OutputQuestionTemplate).to.match(/{{\s?\$ctrl\.name\s?}}/g);
     });
   });
 
   describe('Component', () => {
     // component/directive specs
-    let component = OutputComponent;
+    let component = OutputQuestionComponent;
 
     it('includes the intended template', () => {
-      expect(component.template).to.equal(OutputTemplate);
+      expect(component.template).to.equal(OutputQuestionTemplate);
     });
 
     it('invokes the right controller', () => {
-      expect(component.controller).to.equal(OutputController);
+      expect(component.controller).to.equal(OutputQuestionController);
     });
   });
 });
