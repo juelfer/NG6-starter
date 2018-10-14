@@ -4,24 +4,7 @@ import Common from './common/common';
 import Components from './components/components';
 import AppComponent from './app.component';
 import 'normalize.css';
-// import prediction from './services/answersService';
 import answersService from './services/answersService';
-
-// const answers = [
-//   "Sí",
-//   "Ya te digo",
-//   "Faltaría más",
-//   "Efectivamente",
-//   "Uuuh... ¿sí?",
-//   "No sabria decirte...",
-//   "A mí que me dices, yo solo soy una bola 8",
-//   "No tengo ni idea, Hulio",
-//   "Qué va, qué va, qué va...",
-//   "Nop",
-//   "Ni de coña",
-//   "¡Ja! Ni en sueños"
-// ];
-
 
 angular.module('app', [
     uiRouter,
@@ -36,14 +19,4 @@ angular.module('app', [
   })
 
   .component('app', AppComponent)
-  .service('answersService', answersService)
-
-  //.factory('prediction', prediction);
-  // .service('answersService', () => {
-  //   this.answer = () => {
-  //     const randomIndex = Math.floor( Math.random () * answers.length);
-  //     return answers[randomIndex];
-  //   }
-  // }
-// );
-  
+  .service('answersService', answersService)  
