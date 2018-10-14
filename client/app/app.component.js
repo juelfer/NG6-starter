@@ -1,6 +1,7 @@
 import template from './app.html';
 import './app.scss';
-import prediction from './services/answersService.js';
+// import prediction from './services/answersService.js';
+import answersService from './services/answersService.js';
 
 let appComponent = {
   template,
@@ -8,7 +9,7 @@ let appComponent = {
     this.onNewQuestion = question => {
       this.records.push( {
         question,
-        answer: prediction().responde(question)        //Aquí llamaremos a la función en el service que escogerá la respuesta al azar
+        answer: answersService.answer()        //Aquí llamaremos a la función en el service que escogerá la respuesta al azar
       })
     }
     this.records = [
