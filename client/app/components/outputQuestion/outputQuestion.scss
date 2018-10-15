@@ -1,5 +1,7 @@
 .outputQuestion {
   text-align: center;
+  width: 50vw;
+  margin-left:25vw;
 }
 
 .question {
@@ -8,15 +10,24 @@
 
 .affirmative {
   text-align: center;
-  color: green;
+  color: rgb(69, 240, 69);
+  border-style: solid;
+  border-width: 2px;
+  border-color: green;
 }
 
 .dubious {
   text-align: center;
-  color: yellow;
+  color: rgb(255, 255, 102);
+  border-style: solid;
+  border-width: 2px;
+  border-color: yellow;
 }
 
 .negative {
   text-align: center;
-  color: red;
+  color: rgb(248, 78, 78);
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
 }
