@@ -3,7 +3,9 @@ class InputQuestionController {
     this.question = '';
   }
   onSubmit() {
-    this.submit({question:this.question});
+    this.submit({
+      question: this.question
+    });
     this.question = '';
   }
 }

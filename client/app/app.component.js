@@ -4,9 +4,9 @@ import answersService from './services/answersService.js';
 
 let appComponent = {
   template,
-  controller: function() {   
+  controller: function () {
     this.onNewQuestion = question => {
-      this.records.push( {
+      this.records.push({
         question,
         prediction: answersService.prediction(),
       })

@@ -19,4 +19,4 @@ angular.module('app', [
   })
 
   .component('app', AppComponent)
-  .service('answersService', answersService)  
+  .service('answersService', answersService)

@@ -5,12 +5,12 @@ import inputQuestion from './inputQuestion/inputQuestion';
 import outputQuestion from './outputQuestion/outputQuestion';
 
 let componentModule = angular.module('app.components', [
-  Home,
-  About,
-  inputQuestion,
-  outputQuestion
-])
+    Home,
+    About,
+    inputQuestion,
+    outputQuestion
+  ])
 
-.name;
+  .name;
 
 export default componentModule;

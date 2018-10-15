@@ -3,11 +3,11 @@ import uiRouter from 'angular-ui-router';
 import inputQuestionComponent from './inputQuestion.component';
 
 let inputQuestionModule = angular.module('inputQuestion', [
-  uiRouter
-])
+    uiRouter
+  ])
 
-.component('inputQuestion', inputQuestionComponent)
+  .component('inputQuestion', inputQuestionComponent)
 
-.name;
+  .name;
 
 export default inputQuestionModule;
